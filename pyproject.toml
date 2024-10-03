@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "villa_RC_simulator"
+version = "Forked from https://github.com/architecture-building-systems/RC_BuildingSimulator.git on October 3, 2024"
+description = "A version of RC building simulator that is installable via pip"
+authors = [{name = "Daniel Villa", email = "dlvilla@sandia.gov"}]
+license = {text = "MIT"}
+readme = "README.md"
+homepage = "https://github.com/dlvilla/rc_bsim/"
+keywords = ["building energy models","RC models"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.dependencies]
+numpy
+setuptools
+cython
+matplotlib
+pandas
