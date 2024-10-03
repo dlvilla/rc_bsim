@@ -23,3 +23,10 @@ setuptools
 cython
 matplotlib
 pandas
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rc_simulator*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "rc_simulator.__init__.__version__"}
