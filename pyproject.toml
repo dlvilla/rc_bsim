@@ -16,17 +16,16 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-
-[project.dependencies]
-numpy
-setuptools
-cython
-matplotlib
-pandas
+dependencies = [
+"numpy",
+"setuptools",
+"cython",
+"matplotlib",
+"pandas"]
 
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["rc_simulator*"]
 
 [tool.setuptools.dynamic]
-version = {attr = "rc_simulator.__init__.__version__"}
+version = {attr = "rcbsim.__init__.__version__"}

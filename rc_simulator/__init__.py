@@ -1,1 +1,1 @@
-# naming of package isn't pep8
+""" RC building simulator """
